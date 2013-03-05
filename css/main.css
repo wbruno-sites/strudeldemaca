@@ -176,9 +176,22 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 	.space-right { margin-right: 5%; }
 	.space-left { margin-left: 5%; }
 	img { max-width: 100% !important; height: auto !important; }
+	#no-responsive { display: block; }
+
+	#logo { position: static; margin: 0; left: auto; top: auto; float: left; }
+	#header { height: auto; background: url('../images/bg-roxo-texture-over.png') repeat; }
+	#phone { display: block; }
+
+	#content-header { padding-top: 20px; }
+	#content-header img { float: right;}
+	#postit { background: none; width: auto; height: auto; float: none; }
+
+	#form-title { font-size: 20px; }
 }
 @media only screen and (max-width: 740px){
 	.column-three-quarters { width: 100%; float: none; }
+	.header-text { float: left; }
+	#main-img { margin: 0; }
 }
 @media only screen and (max-width: 660px){
 	.column-two-thirds { width: 100%; float: none; }
@@ -189,12 +202,29 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 	.column-one-twelfths { width: 30% }
 	.column-full .column-one-twelfths:nth-child(3n) { margin-right: 0; }
 
+	#header { padding-bottom: 20px; }
+	#logo { margin: 0 auto; float: none; }
+	.header-text { float: none; text-align: center; margin-top: 5px; }
+	#phone { display: inline; }
+
+	#postit { padding: 0; }
+	#content-header { padding-bottom: 20px; margin: 0; }
 	#postit,
 	#content-header img { float: none;}
 
+	#form-action { height: auto; }
+	.input-text { width: 95%; }
+	.input-submit { margin-top: 25px; width: 100%; }
+	.input-small { width: 88%; }
+	.copy-text { font-size: 14px; line-height: 1em; }
 	#postit { width: auto; }
+	#main-img  { float: none; }
 }
 @media only screen and (max-width: 480px){
+
+	#logo { max-width: 100%; height: 145px; padding: 3px 0 0 0; background-size: 100%; text-align: center; }
+	.logo-img { max-width: 80% !important; }
+
 	.column-full { padding: 0 3%; }
 }
 @media only screen and (max-width: 320px){

@@ -68,20 +68,21 @@
 <body class="home">
 	<header id="header">
 		<div class="content column-full">
-			<p class="header-text fleft"><a href="#form-action">Clique aqui e peça pelo formulário!</a></p>
 			<div id="logo">
-				<img src="images/logo-strudel-de-maca.png" height="103" width="259" alt="Logo Strudel de Maça" />
+				<img src="images/logo-strudel-de-maca.png" height="103" width="259" alt="Logo Strudel de Maça" class="logo-img" />
 			</div><!-- #logo -->
-			<p class="header-text fright">Peça pelo número: 
+			<p class="header-text fleft"><a href="#form-action">Clique aqui e peça pelo formulário!</a></p>
+			<p class="header-text fright">Peça: 
 <?php
 	$h = (int)date('H');
 
 	if( $h>=7 && $h<13 ){
-		echo '<span data-href="tel:01137822391" id="phone" class="fright" title="ligue (11) 3782-2391">(11) 3782-2391</span>';
+		echo '<span data-href="tel:01137822391" id="phone" title="ligue (11) 3782-2391">(11) 3782-2391</span>';
 	} else {
-		echo '<span data-href="tel:011963099227" id="phone" class="fright" title="ligue (11) 9 6309-9227">(11) 9 6309-9227</span>';
+		echo '<span data-href="tel:011963099227" id="phone" title="ligue (11) 9 6309-9227">(11) 9 6309-9227</span>';
 	}
 ?>
 			</p>
+			<div class="clear"></div>
 		</div>
 	</header><!-- #header -->
