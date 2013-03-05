@@ -212,7 +212,7 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 	#postit,
 	#content-header img { float: none;}
 
-	#form-action { height: auto; }
+	#form-action { height: auto; padding-bottom: 25px; }
 	.input-text { width: 95%; }
 	.input-submit { margin-top: 25px; width: 100%; }
 	.input-small { width: 88%; }
