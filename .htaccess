@@ -1,0 +1,9 @@
+AddType application/x-httpd-php html
+
+
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www\.strudeldemaca\.com\.br$
+RewriteRule (.*) http://strudeldemaca.com.br/$1 [R=301,L]
+
+ErrorDocument 404 /404.html
