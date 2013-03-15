@@ -8,10 +8,10 @@ if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['sobrenome']==='' )
 
 	function filter( $var ){
 		if( !get_magic_quotes_gpc() )
-			//$str = mysql_real_escape_string( $var );
 			$str = addslashes( $var );
-		else
+		} else {
 			$str = $var;
+		}
 		$str = str_replace( '#', '\#', $str );
 		return $str;
 	}
