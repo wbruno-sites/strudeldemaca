@@ -2,6 +2,23 @@
 $msg = '';
 if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['sobrenome']==='' )
 {
+	function getPost( $campo ){
+		return isset($_POST[$campo]) ? filter( $_POST[$campo] ) : '';
+	}
+
+	function filter( $var ){
+		if( !get_magic_quotes_gpc() )
+			//$str = mysql_real_escape_string( $var );
+			$str = addslashes( $var );
+		else
+			$str = $var;
+		$str = str_replace( '#', '\#', $str );
+		return $str;
+	}
+	
+
+	ini_set('display_errors',1);
+
 	/* Mensagem */
 	$message =
 	'<strong>Nome: </strong>'.$_POST['nome'].'<br>'.
