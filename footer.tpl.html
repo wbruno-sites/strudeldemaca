@@ -7,7 +7,7 @@ if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['sobrenome']==='' )
 	}
 
 	function filter( $var ){
-		if( !get_magic_quotes_gpc() )
+		if( !get_magic_quotes_gpc() ){
 			$str = addslashes( $var );
 		} else {
 			$str = $var;
